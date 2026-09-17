@@ -170,37 +170,25 @@ Response latency also varied between requests. For example, Llama responded in *
 > **Note:** These response times represent individual application test runs and should not be interpreted as formal performance benchmarks. Model latency can vary between requests and environments.
 
 
+## 📸 Application Screenshots
 
+The application provides a simple web interface where users can enter a prompt, select a foundation model, and compare the generated response and response time.
 
+### 🖥️ Application Interface
 
+![Multi-Model GenAI Application](assets/app-interface.png)
 
+### 🧠 IBM Granite
 
+![IBM Granite Response](assets/granite-result.png)
 
+### 🦙 Meta Llama
 
+![Meta Llama Response](assets/llama-result.png)
 
+### 🌬️ Mistral
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![Mistral Response](assets/mistral-result.png)
 
 
 
