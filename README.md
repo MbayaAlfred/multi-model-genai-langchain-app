@@ -190,5 +190,10 @@ The application provides a simple web interface where users can enter a prompt, 
 
 ![Mistral Response](assets/mistral-result.png)
 
+<br>
+
+---
+
+## 📂 Project Structure
 
 
