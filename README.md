@@ -201,7 +201,7 @@ multi-model-genai-langchain-app/
 ├── app.py                  # Flask application and API routes
 ├── model.py                # LangChain models, prompts, and response chains
 ├── config.py               # Model IDs and generation parameters
-├── llm_test.py             # Model testing script
+
 │
 ├── templates/
 │   └── index.html          # Web application interface
@@ -222,5 +222,68 @@ multi-model-genai-langchain-app/
 ```
 
 The project follows a modular structure that separates the **web application**, **LLM integration**, **configuration**, **frontend assets**, and **documentation**.
+---
+
+## 🚀 Running the Application
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/MbayaAlfred/multi-model-genai-langchain-app.git
+cd multi-model-genai-langchain-app
+```
+
+### 2. Create and activate a virtual environment
+
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+
+On Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Configure IBM watsonx.ai
+
+The application requires access to IBM watsonx.ai. Configure the required credentials securely in your environment before running the application.
+
+> **Note:** API keys and other sensitive credentials are intentionally not stored in this repository.
+
+### 5. Start the Flask application
+
+```bash
+python app.py
+```
+
+The Flask development server will start and provide access to the application through the local development environment.
+
+---
+
+## 💡 Key Learnings
+
+This project provided hands-on experience with:
+
+- 🔗 **LangChain Expression Language (LCEL)** for composing reusable AI workflows.
+- 🧠 **Multi-model integration** using IBM Granite, Meta Llama, and Mistral through IBM watsonx.ai.
+- 📝 **Model-specific prompt templates** for interacting with different foundation models.
+- 📦 **Structured output parsing** using Pydantic and LangChain's `JsonOutputParser`.
+- 🌐 **Flask API development** for connecting a web interface to Generative AI models.
+- ⏱️ **Model comparison and latency testing** using the same prompt across multiple LLMs.
+- 🧩 **Modular application design** separating configuration, model logic, API routing, frontend assets, and documentation.
+
+### Main Takeaway
+
+LangChain provides a reusable orchestration layer that allows an application to work with different foundation models while keeping much of the surrounding application workflow consistent.
+
+This project also demonstrated that different LLMs can produce noticeably different response styles and response times even when given the same scenario.
 
 
