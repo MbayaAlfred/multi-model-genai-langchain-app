@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant</title>
 
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <header class="header">
+            <h2>AI Assistant</h2>
+
+            <button id="clearChat" class="clear-chat">
+                Clear Chat
+            </button>
+        </header>
+
+        <main class="chat-container">
+
+            <div id="welcomeScreen" class="welcome-screen">
+                <div class="welcome-icon">☺</div>
+
+                <h2>Welcome to AI Assistant</h2>
+
+                <p>
+                    Choose a model and start a conversation.
+                    I'm here to help with your questions and tasks.
+                </p>
+            </div>
+
+            <div id="chatMessages" class="chat-messages"></div>
+
+        </main>
+
+        <div class="input-container">
+
+            <div class="model-selector">
+                <label for="modelSelect">Model:</label>
+
+                <select id="modelSelect">
+                    <option value="">Select Model</option>
+                    <option value="llama">Llama</option>
+                    <option value="granite">Granite</option>
+                    <option value="mistral">Mistral</option>
+                </select>
+            </div>
+
+            <div class="message-input-container">
+
+                <textarea
+                    id="messageInput"
+                    placeholder="Type your message... (Enter to send, Shift+Enter for new line)"
+                    rows="1">
+                </textarea>
+
+                <button id="sendButton" class="send-button">
+                    ➤
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
