@@ -193,7 +193,34 @@ The application provides a simple web interface where users can enter a prompt, 
 <br>
 
 ---
-
 ## 📂 Project Structure
+
+```text
+multi-model-genai-langchain-app/
+│
+├── app.py                  # Flask application and API routes
+├── model.py                # LangChain models, prompts, and response chains
+├── config.py               # Model IDs and generation parameters
+├── llm_test.py             # Model testing script
+│
+├── templates/
+│   └── index.html          # Web application interface
+│
+├── static/
+│   ├── styles.css          # Application styling
+│   └── script.js           # Frontend interaction logic
+│
+├── assets/
+│   ├── app-interface.png
+│   ├── granite-result.png
+│   ├── llama-result.png
+│   └── mistral-result.png
+│
+├── requirements.txt        # Python dependencies
+├── .gitignore
+└── README.md
+```
+
+The project follows a modular structure that separates the **web application**, **LLM integration**, **configuration**, **frontend assets**, and **documentation**.
 
 
