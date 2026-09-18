@@ -1,1 +1,5 @@
-
+Flask
+langchain
+langchain-ibm
+ibm-watsonx-ai==1.3.39
+pydantic
